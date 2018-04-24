@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+	<head>
+        <link src="Solwin_Contactwidget::js/theServicesValidationRule.js"/>
+    </head>    
+    <body>
+        <referenceContainer name="content">
+            <block class="Solwin\Contactwidget\Block\Adminhtml\Contactwidget\Edit" name="contactwidget_contactwidget_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Solwin\Contactwidget\Block\Adminhtml\Contactwidget\Edit\Tabs" name="contactwidget_contactwidget_edit_tabs">
+                <block class="Solwin\Contactwidget\Block\Adminhtml\Contactwidget\Edit\Tab\Information" name="contactwidget_contactwidget_edit_tab_information"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">information_section</argument>
+                    <argument name="block" xsi:type="string">contactwidget_contactwidget_edit_tab_information</argument>
+                </action>
+                <!--CedAddTab-->
+            </block>
+        </referenceContainer>
+    </body>
+</page>

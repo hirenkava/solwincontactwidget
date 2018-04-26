@@ -15,10 +15,15 @@ $formActionUrl = $this->getFormActionUrl();
 $helper = $this->helper('Solwin\Contactwidget\Helper\Data');
 $currPageUrl = $helper->getCurrentUrls();
 $anySpecificLabel = $helper->getConfigValue('contactwidget_section/general/any_specific_services');
+$anySpecificLabel = ($anySpecificLabel != '') ? $anySpecificLabel : 'Any Specific Services';
 $specificLabel = $helper->getConfigValue('contactwidget_section/general/services');
+$specificLabel = ($specificLabel != '') ? $specificLabel : 'Services';
 $comfortableWith = $helper->getConfigValue('contactwidget_section/general/comfortable_with');
+$comfortableWith = ($comfortableWith != '') ? $comfortableWith : 'Comfortable With';
 $comfortableWithPhone = $helper->getConfigValue('contactwidget_section/general/comfortable_with_phone');
+$comfortableWithPhone = ($comfortableWithPhone != '') ? $comfortableWithPhone : 'Comfortable With Phone';
 $comfortableWithEmail = $helper->getConfigValue('contactwidget_section/general/comfortable_with_email');
+$comfortableWithEmail = ($comfortableWithEmail != '') ? $comfortableWithEmail : 'Comfortable With Email';
 ?>
 <?php if($widgetEnable){?>
 <form class="form contact" action="<?php echo $formActionUrl;?>" id="contact-form" method="post" data-hasrequired="<?php /* @escapeNotVerified */ echo __('* Required Fields') ?>" data-mage-init='{"theServicesValidationRule":{},"validation":{}}'>

@@ -20,7 +20,7 @@ class Save extends \Magento\Backend\App\Action {
             $model->setData($data);
             try {
                 $model->save();
-                $this->messageManager->addSuccess(__('Contactwidget has been saved.'));
+                $this->messageManager->addSuccess(__('Contact has been saved.'));
                 $this->_objectManager->get('Magento\Backend\Model\Session')->setFormData(false);
                 if ($this->getRequest()->getParam('back')) {
                     $this->_redirect('*/*/edit', array('id' => $model->getId(), '_current' => true));

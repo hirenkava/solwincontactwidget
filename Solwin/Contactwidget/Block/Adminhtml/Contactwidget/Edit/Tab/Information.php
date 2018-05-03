@@ -123,7 +123,7 @@ class Information extends \Magento\Backend\Block\Widget\Form\Generic implements 
             'values' => $serviceArr
         ));
 		
-		$comfortableWithArr = array('Phone' => 'Phone', 'Email' => 'Email');
+		$comfortableWithArr = array('phone' => 'Phone', 'email' => 'Email');
         $fieldset->addField('comfortable_with', 'select', array(
             'label' => 'Contact through',
             'class' => 'required-entry',

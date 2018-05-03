@@ -265,7 +265,7 @@
                 <item name="config" xsi:type="array">
                     <item name="filter" xsi:type="string">select</item>
                     <item name="sortable" xsi:type="boolean">true</item>
-                    <item name="label" xsi:type="string" translate="true">Any Specific Services</item>
+                    <item name="label" xsi:type="string" translate="true">New Service</item>
                     <item name="component" xsi:type="string">Magento_Ui/js/grid/columns/select</item>
                     <item name="dataType" xsi:type="string">select</item>
                 </item>
@@ -293,7 +293,7 @@
                             <item name="required-entry" xsi:type="boolean">true</item>
                         </item>
                     </item>
-                    <item name="label" xsi:type="string" translate="true">Comfortable With</item>
+                    <item name="label" xsi:type="string" translate="true">Contact through</item>
                 </item>
             </argument>
         </column>

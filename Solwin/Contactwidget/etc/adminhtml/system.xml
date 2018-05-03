@@ -25,19 +25,22 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
 				<field id="any_specific_services" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Any Specific Services</label>                    
+                    <label>New Service</label>                    
                 </field>
 				<field id="services" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Services</label>                    
                 </field>
 				<field id="comfortable_with" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Comfortable With</label>                    
+                    <label>Contact through</label>
+					<comment>Label of contact form radio button group</comment>                    
                 </field>
 				<field id="comfortable_with_phone" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Comfortable With Phone Label</label>                    
+                    <label>Contact through phone</label> 
+					<comment>Contact form phone radio button label</comment>					
                 </field>
 				<field id="comfortable_with_email" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
-                    <label>Comfortable With Email Label</label>                    
+                    <label>Contact through email</label>                    
+					<comment>Contact form email radio button label</comment>
                 </field>
             </group>
             <!-- reCaptcha Group -->

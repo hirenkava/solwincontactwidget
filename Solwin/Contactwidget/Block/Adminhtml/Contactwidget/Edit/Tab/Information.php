@@ -109,8 +109,8 @@ class Information extends \Magento\Backend\Block\Widget\Form\Generic implements 
             'any_specific_services', 'checkbox', array(
                 'name' => 'any_specific_services',
                 'class' => 'check_services',
-                'label' => __('Any Specific Services'),
-                'title' => __('Any Specific Services'),
+                'label' => __('New Service'),
+                'title' => __('New Service'),
                 'required' => false
             )
         )->setIsChecked($model->getAnySpecificServices());
@@ -125,7 +125,7 @@ class Information extends \Magento\Backend\Block\Widget\Form\Generic implements 
 		
 		$comfortableWithArr = array('Phone' => 'Phone', 'Email' => 'Email');
         $fieldset->addField('comfortable_with', 'select', array(
-            'label' => 'Comfortable With',
+            'label' => 'Contact through',
             'class' => 'required-entry',
             'name' => 'comfortable_with',
             'style' => 'width:150px',

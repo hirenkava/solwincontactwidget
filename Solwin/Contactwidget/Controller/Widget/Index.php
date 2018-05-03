@@ -116,9 +116,11 @@ class Index extends \Magento\Framework\App\Action\Action
                 }
             }
         }
-		$data['service'] = $data['services'];
+		$data['service'] = (isset($data['services']) && $data['services'] != 1) ? $data['services'] : '';
 		$data['any_specific_services'] = (isset($data['any_specific_services'])) ? $data['any_specific_services'] : 0;
 		$data['comfortable_with'] = (isset($data['comfortable_with'])) ? $data['comfortable_with'] : 'email';
+		$data['phone_number'] = (isset($data['telephone'])) ? $data['telephone'] : '';
+		$data['whats_on_your_mind'] = (isset($data['comment'])) ? $data['comment'] : '';
         try {
 
             $postObject = new \Magento\Framework\DataObject();
